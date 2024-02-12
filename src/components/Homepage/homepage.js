@@ -240,15 +240,7 @@ const Homepage = () => {
                 viewport={{ once: false, amount: 0.6 }}
                 className="custom-button"
               >
-                <span
-                  onClick={() => {
-                    document
-                      .getElementById("contact")
-                      .scrollIntoView({ behavior: "smooth" });
-                  }}
-                >
-                  Download Sv
-                </span>
+                <span>Download Sv</span>
               </motion.button>
             </a>
             <div className="icons">
