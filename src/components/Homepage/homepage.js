@@ -237,10 +237,14 @@ const Homepage = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="custom-button"
             >
-              <span>
-                <Link to="contactpage" className="link-back">
-                  Hire Me
-                </Link>
+              <span
+                onClick={() => {
+                  document
+                    .getElementById("contact")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Hire Me
               </span>
             </motion.button>
             <div className="icons">
