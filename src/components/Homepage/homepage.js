@@ -9,6 +9,8 @@ import { ReactTyped } from "react-typed";
 //motion
 import { motion } from "framer-motion";
 
+import resume from "./giorgi-jakeli.pdf";
+
 const Homepage = () => {
   const [scrollValue, setScrollValue] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
@@ -230,23 +232,25 @@ const Homepage = () => {
             viewport={{ once: false, amount: 0.6 }}
             className="box"
           >
-            <motion.button
-              variants={fadeIn("left", 0.2)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.6 }}
-              className="custom-button"
-            >
-              <span
-                onClick={() => {
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
+            <a href={resume} download={resume}>
+              <motion.button
+                variants={fadeIn("left", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.6 }}
+                className="custom-button"
               >
-                Hire Me
-              </span>
-            </motion.button>
+                <span
+                  onClick={() => {
+                    document
+                      .getElementById("contact")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  Download Sv
+                </span>
+              </motion.button>
+            </a>
             <div className="icons">
               <div className="icon">
                 <a
