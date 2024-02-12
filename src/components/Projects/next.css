@@ -1,0 +1,124 @@
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects {
+  cursor: pointer;
+  height: 20rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+.projects:hover {
+  background-color: aliceblue;
+  filter: grayscale(0%);
+  transform: translateY(-5px);
+}
+
+.projects:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(200, 200, 200, 0.2),
+    rgba(100, 100, 100, 0.6)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(100%);
+}
+
+.projects:hover:before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.overlay a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.overlay a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.overlay a:hover::after {
+  width: 100%;
+}
+
+.interface {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.workstitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#one {
+  background-image: url("../../assets/project1.jpg");
+}
+
+#two {
+  background-image: url("../../assets/project2.jpg");
+}
+
+#three {
+  background-image: url("../../assets/project3.jpg");
+}
+
+#four {
+  background-image: url("../../assets/project4.jpg");
+}
+
+#five {
+  background-image: url("../../assets/project5.jpg");
+}
+
+#six {
+  background-image: url("../../assets/project6.jpg");
+}

@@ -1,0 +1,112 @@
+#skills {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.skilltitle {
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.skilldesc {
+  font-weight: 300;
+  font-size: 1.2rem;
+  max-width: 51rem;
+  padding: 0 2rem;
+}
+
+.skillbars {
+  margin: 1, 5rem;
+  width: 100vw;
+  max-width: 100%;
+  text-align: left;
+}
+
+.skillbar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  gap: 0 50px;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.skillbartext {
+  font-size: 0.9rem;
+  font-weight: 200;
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 720px) {
+  .skillbartext > p {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillbartext > p {
+    font-size: 3vw;
+  }
+  .skillbarimg {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  .skillbartext > h2 {
+    font-size: 5vw;
+  }
+}
+
+.barcon {
+  background-color: gray;
+  width: 70%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#oneskill,
+#twoskill {
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+#oneskill {
+  background-image: url("../../assets/appdeveloper.jpg");
+  border-radius: 20px;
+}
+
+#twoskill {
+  background-image: url("../../assets/webdeveloper.jpg");
+  border-radius: 20px;
+}
+
+#threeskill {
+  background-image: url("../../assets/python2.jpg");
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

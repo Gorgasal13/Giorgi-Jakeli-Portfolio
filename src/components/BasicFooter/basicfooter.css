@@ -1,0 +1,105 @@
+#footer {
+  background: #121212;
+  padding: 5rem 0;
+  height: 10vh;
+  width: 100vw;
+}
+
+.con {
+  height: 40vh;
+  width: 90vw;
+  background: #121212;
+  margin: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 5rem;
+}
+a {
+  color: white;
+  margin: 0.3rem 0;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.footer-col h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ff5050;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #121212;
+  margin-right: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #ff5050;
+  background-color: #121212;
+}
+
+.lastone {
+  width: 100vw;
+  height: 4rem;
+  background: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  .lastone {
+    display: none;
+  }
+}

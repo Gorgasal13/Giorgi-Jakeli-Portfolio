@@ -1,0 +1,138 @@
+#contactpage {
+  min-height: calc(100vh-4rem);
+  width: 100vw;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientpagetitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.clientpagedesc {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.clientimgs {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clientimg {
+  object-fit: cover;
+  width: 23%;
+  min-width: 9rem;
+  margin: auto;
+  padding: 0.25rem;
+}
+
+#clients {
+  padding: 2rem;
+}
+
+.contactdesc {
+  padding: 1rem;
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+.contactform {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+
+.name,
+.email,
+.msg,
+.phone {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  color: white;
+  border: none;
+  background: rgb(40, 40, 40);
+}
+.msg {
+  margin-bottom: 30px;
+}
+
+.name .submitbtn {
+  background: white;
+  border: none;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+}
+
+.submitbtn:hover {
+  transition: 0.3s;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+}
+
+.error {
+  color: #fff;
+}
+
+.submitbutton {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  padding: 15px 60px; /* Adjust the padding to match the custom button */
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.submitbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: white;
+  transition: height 0.3s;
+  z-index: -1;
+}
+
+.submitbutton:hover::before {
+  height: 100%;
+}
+
+.submitbutton:hover {
+  color: black;
+}

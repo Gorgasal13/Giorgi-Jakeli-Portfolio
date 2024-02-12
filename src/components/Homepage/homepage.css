@@ -1,0 +1,297 @@
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../../assets/background.jpg);
+  background-size: cover;
+}
+#intro {
+  height: calc(100vh-4rem);
+  width: 100vw;
+  max-width: 100rem;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bg {
+  top: -4rem;
+  right: -4rem;
+  bottom: -10rem;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+}
+
+.introcontent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.con {
+  background-color: white;
+  width: 700px;
+  height: 500px;
+}
+
+.introname {
+  color: #ff5050;
+}
+
+.textcontent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intropara {
+  font-size: large;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.btn {
+  background: white;
+  margin: 1rem 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff5050;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btnimg {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+
+#navbar {
+  height: 5rem;
+  width: 100vw;
+  max-width: 100rem;
+  margin: 0;
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+}
+.desktopmenu {
+  margin-left: 6rem;
+  text-align: center;
+}
+
+.desktopmenulistitem {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.desktopmenulistitem:hover {
+  color: #ff5050;
+  padding-bottom: 0.5rem;
+  transition: 0.3s;
+}
+
+.active {
+  color: #ff5050;
+  padding-bottom: 0.5rem;
+}
+
+.mobmenu {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+.navmenu {
+  position: absolute;
+  top: 6rem;
+  right: 5rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+
+.listitem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+  cursor: pointer;
+}
+
+.bgcolor {
+  background-color: rgba(100, 100, 100, 0.7);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button,
+.desktopmenubutton {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 1;
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: white;
+  transition: height 0.3s;
+  z-index: -1;
+}
+.desktopmenubutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: white;
+  transition: height 0.3s;
+  z-index: -1;
+}
+
+.desktopmenubutton:hover::before {
+  height: 100%;
+}
+
+.custom-button:hover::before {
+  height: 100%;
+}
+.desktopmenubutton:hover {
+  color: black;
+}
+.custom-button:hover {
+  color: black;
+}
+#navbar {
+  border-bottom: none;
+}
+
+.desktopmenulistitem {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.desktopmenulistitem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.desktopmenulistitem:hover::before {
+  width: 100%;
+  bottom: 2px;
+}
+
+.icons {
+  margin-top: 15px;
+}
+.icon {
+  border-radius: 50px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  margin-top: 10px;
+}
+.ico:hover {
+  margin-left: 0.2rem;
+  transition: all 0.3s;
+}
+.ico {
+  color: bisque;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ico:hover {
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.introtext {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobmenu {
+    display: flex;
+  }
+  .desktopmenu {
+    display: none;
+  }
+  .desktopmenubutton {
+    display: none;
+  }
+  .custom-button {
+    display: none;
+  }
+}
