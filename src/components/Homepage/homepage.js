@@ -24,13 +24,10 @@ const Homepage = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // const [showMenu, setShowMenu] = useState(false);
-  // const buttonClassName =
-  //   "btns-animate-" + Math.random().toString(36).substring(7);
+
   return (
     <header>
       <nav id="navbar" className={scrollValue > 150 ? "bgcolor" : ""}>
-        {/* <img src={logo} alt="logo" className="logo" /> */}
         <h1 className="logo">Giorgi</h1>
         <div className="desktopmenu">
           <Link
@@ -242,7 +239,9 @@ const Homepage = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="custom-button"
             >
-              <span>Download Sv</span>
+              <span>
+                <Link to={"contact"}>Hire Me</Link>
+              </span>
             </motion.button>
             <div className="icons">
               <div className="icon">
