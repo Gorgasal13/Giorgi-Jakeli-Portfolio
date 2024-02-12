@@ -295,3 +295,9 @@ header {
     display: none;
   }
 }
+.link-back {
+  transition: all 0.3s;
+}
+.link-back:hover {
+  color: black;
+}

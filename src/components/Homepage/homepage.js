@@ -94,10 +94,9 @@ const Homepage = () => {
               .scrollIntoView({ behavior: "smooth" });
           }}
         >
-          {/* <img src={contact} alt="" className="desktopmenuimg" />*/} Contact
-          Me
+          Contact Me
         </button>
-        {/* for phone */}
+
         <img
           src={menu}
           alt="mobmenu"
@@ -164,7 +163,7 @@ const Homepage = () => {
               setShowMenu(false);
             }}
           >
-            Skills
+            About
           </Link>
           <Link
             activeClass="active"
@@ -178,10 +177,9 @@ const Homepage = () => {
               setShowMenu(false);
             }}
           >
-            NewSkills
+            Skills
           </Link>
         </div>
-        {/* for phone */}
       </nav>
 
       <section id="intro">
@@ -240,7 +238,9 @@ const Homepage = () => {
               className="custom-button"
             >
               <span>
-                <Link to={"contact"}>Hire Me</Link>
+                <Link to="contactpage" className="link-back">
+                  Hire Me
+                </Link>
               </span>
             </motion.button>
             <div className="icons">
