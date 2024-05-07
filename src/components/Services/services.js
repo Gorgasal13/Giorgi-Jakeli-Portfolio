@@ -71,11 +71,11 @@ function Services() {
 
           <div className="experienceitem">
             <div className="experienceinfo">
-              <p>Flask</p>
-              <p>70%</p>
+              <p>Django</p>
+              <p>80%</p>
             </div>
-            <div className="progressline" data-percent="70%">
-              <span style={{ width: "70%" }}></span>
+            <div className="progressline" data-percent="80%">
+              <span style={{ width: "80%" }}></span>
             </div>
           </div>
 

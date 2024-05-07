@@ -74,7 +74,7 @@ const Skills = () => {
             className="skillbartext"
           >
             <h2>Python Developer</h2>
-            <p>Make App with Python, Also work with Flask</p>
+            <p>Make App with Python, Also work with Django</p>
           </motion.div>
         </div>
       </div>
